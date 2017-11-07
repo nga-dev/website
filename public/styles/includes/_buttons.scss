@@ -1,0 +1,83 @@
+@mixin Button($color) {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid;
+  font-size: 18px;
+
+  @include Transition(300ms);
+
+  &:hover {
+    cursor: pointer !important;
+  }
+
+  @if $color == white {
+    color: $white;
+    border-color: $white;
+    background: transparent;
+
+    &:hover {
+      color: $black;
+      background: $white;
+    }
+  }
+
+  @if $color == black {
+    color: $white;
+    border-color: $black;
+    background: $black;
+
+    &:hover {
+      color: $black;
+      background: $white;
+
+    }
+  }
+
+  @if $color == green {
+    color: $white;
+    border-color: $green;
+    background: $green;
+
+    &:hover {
+      color: $white;
+      background: lighten($green, 5%);
+
+    }
+  }
+
+  &--pullRight {
+    float: right;
+  }
+
+}
+
+
+.btn {
+  @include Button(black);
+
+
+  &--white {
+    @include Button(white);
+  }
+
+  &--black {
+    @include Button(black);
+  }
+
+  &--green {
+    @include Button(green);
+  }
+}
+
+
+.view__header {
+  .btn { margin-right: 10px; }
+  //   box-shadow: 0px 0px 30px rgba(0,0,0,0.6);
+  //
+  //   &:hover {
+  //     box-shadow: 0px 10px 40px rgba(0,0,0,0.3);
+  //   }
+  // }
+}

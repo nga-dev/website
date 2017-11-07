@@ -1,0 +1,30 @@
+.nav {
+  height: $navHeight;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  background: $blue;
+
+  &__list {
+    &__item {
+      line-height: $navHeight;
+      color: $white;
+      font-size: 2rem;
+      padding: 0rem 2rem;
+      display: inline-block;
+      vertical-align: top;
+      @include Transition(300ms);
+
+      &[data-gotokey="home"] {
+        font-weight: 800;
+        font-size: 3rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background: darken($blue, 5%);
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+nav.nav
+  ul.nav__list
+    each navItem in navLinks
+      li.nav__list__item(data-goto=navItem.href, data-gotokey=navItem.key)= navItem.label

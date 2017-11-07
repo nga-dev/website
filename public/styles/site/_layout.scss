@@ -1,16 +1,24 @@
-#header {
-	margin-top: 30px;
-}
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
 
-#footer {
-	margin-top: 30px;
-	border-top: 1px solid #eeeeee;
-	padding-top: 30px;
-	color: #777777;
-}
+	* {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		outline: none !important;
+	}
 
-.gallery-image img{
-    display: block;
-    max-width: 100%;
-    height: auto;
+	.index {
+		padding-top: $navHeight;
+	}
+
+	h1 {
+		font-size: 4rem;
+		line-height: 6rem;
+	}
+
+	h2 {
+		font-size: 2.4rem;
+		line-height: 4rem;
+	}
 }

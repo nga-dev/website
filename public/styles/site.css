@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.btn {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid;
+  font-size: 18px;
+  -webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  -ie-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  color: #FFF;
+  border-color: #222325;
+  background: #222325; }
+  .btn:hover {
+    cursor: pointer !important; }
+  .btn:hover {
+    color: #222325;
+    background: #FFF; }
+  .btn--pullRight {
+    float: right; }
+  .btn--white {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid;
+    font-size: 18px;
+    -webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ie-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    color: #FFF;
+    border-color: #FFF;
+    background: transparent; }
+    .btn--white:hover {
+      cursor: pointer !important; }
+    .btn--white:hover {
+      color: #222325;
+      background: #FFF; }
+    .btn--white--pullRight {
+      float: right; }
+  .btn--black {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid;
+    font-size: 18px;
+    -webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ie-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    color: #FFF;
+    border-color: #222325;
+    background: #222325; }
+    .btn--black:hover {
+      cursor: pointer !important; }
+    .btn--black:hover {
+      color: #222325;
+      background: #FFF; }
+    .btn--black--pullRight {
+      float: right; }
+  .btn--green {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid;
+    font-size: 18px;
+    -webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ie-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    color: #FFF;
+    border-color: #00ad45;
+    background: #00ad45; }
+    .btn--green:hover {
+      cursor: pointer !important; }
+    .btn--green:hover {
+      color: #FFF;
+      background: #00c64f; }
+    .btn--green--pullRight {
+      float: right; }
+
+.view__header .btn {
+  margin-right: 10px; }
+
+input {
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  background: white;
+  border: 1px solid;
+  font-size: 18px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  text-indent: 10px;
+  -webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  -ie-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  color: #222325;
+  border-color: #FFF;
+  background: #FFF; }
+  input.error {
+    border-bottom: 1px solid #F90101; }
+  input--white {
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    background: white;
+    border: 1px solid;
+    font-size: 18px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    text-indent: 10px;
+    -webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ie-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    color: #222325;
+    border-color: #FFF;
+    background: #FFF; }
+    input--white.error {
+      border-bottom: 1px solid #F90101; }
+  input--black {
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    background: black;
+    border: 1px solid;
+    font-size: 18px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    text-indent: 10px;
+    -webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ie-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    color: #FFF;
+    border-color: #222325;
+    background: #222325; }
+    input--black.error {
+      border-bottom: 1px solid #F90101; }
+
+.section {
+  padding: 2rem; }
+  .section__content {
+    max-width: 112rem;
+    margin: auto; }
+  .section[data-bg][data-bg="gray"] {
+    background: #424242; }
+
+.nav {
+  height: 5rem;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  background: #283C61; }
+  .nav__list__item {
+    line-height: 5rem;
+    color: #FFF;
+    font-size: 2rem;
+    padding: 0rem 2rem;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ie-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1); }
+    .nav__list__item[data-gotokey="home"] {
+      font-weight: 800;
+      font-size: 3rem; }
+    .nav__list__item:hover {
+      cursor: pointer;
+      background: #21314f; }
+
+form {
+  padding: 1rem;
+  border: 1px solid #283C61;
+  display: inline-block; }
+  form input {
+    border: 1px solid #CCC;
+    margin: 0rem;
+    display: inline-block; }
+    @media (max-width: 767px) {
+      form input {
+        width: 100%; } }
+  form .btn {
+    margin-left: 1rem; }
+    @media (max-width: 767px) {
+      form .btn {
+        width: 100%;
+        margin-left: 0rem;
+        margin-top: 1rem; } }
+
+.posts {
+  padding: 1rem;
+  background: #EEE;
+  min-height: 20rem; }
+  .posts__list {
+    font-size: 1.6rem; }
+    .posts__list__item {
+      border-bottom: 1px solid #424242;
+      padding: 1rem; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal; }
+  body * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none !important; }
+  body .index {
+    padding-top: 5rem; }
+  body h1 {
+    font-size: 4rem;
+    line-height: 6rem; }
+  body h2 {
+    font-size: 2.4rem;
+    line-height: 4rem; }

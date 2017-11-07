@@ -1,0 +1,14 @@
+.section {
+  padding: 2rem;
+
+  &__content {
+    max-width: 112rem;
+    margin: auto;
+  }
+
+  &[data-bg] {
+    &[data-bg="gray"] {
+      background: $gray;
+    }
+  }
+}

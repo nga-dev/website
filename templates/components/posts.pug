@@ -1,0 +1,4 @@
+.posts
+  ul.posts__list
+    each post in posts
+      li.posts__list__item(data-id=post._id)= post.content

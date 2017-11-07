@@ -1,0 +1,14 @@
+.posts {
+  padding: 1rem;
+  background: #EEE;
+  min-height: 20rem;
+
+  &__list {
+    font-size: 1.6rem;
+
+    &__item {
+      border-bottom: 1px solid $gray;
+      padding: 1rem;
+    }
+  }
+}
